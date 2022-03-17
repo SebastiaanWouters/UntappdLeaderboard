@@ -15,8 +15,9 @@ async function start() {
 	let button_2012 = document.getElementById('button_2021');
 	button_2021.disabled = true;
 	button_2012.style.display = 'none';
-
+	
 	let leaderboard2021 = await get('http://arne.ulyssis.be/Untappd/leaderboard2021.json');
+	
 	if (leaderboard2021 != "") {
 		button_2021.disabled = false;
 		button_2012.style.display = 'block';
@@ -47,9 +48,10 @@ async function start() {
 		document.getElementById('total_unique_beers_position_11_points_2021').innerHTML = leaderboard2021.number_unique_beers.points.points_11;
 		document.getElementById('total_unique_beers_position_12_points_2021').innerHTML = leaderboard2021.number_unique_beers.points.points_12;
 	}
-
+	
 	let leaderboard = await get('http://arne.ulyssis.be/Untappd/leaderboard.json');
-
+	
+	
 	document.getElementById('total_unique_beers_position_1_name').innerHTML = leaderboard.number_unique_beers.ranking.position_1;
 	document.getElementById('total_unique_beers_position_2_name').innerHTML = leaderboard.number_unique_beers.ranking.position_2;
 	document.getElementById('total_unique_beers_position_3_name').innerHTML = leaderboard.number_unique_beers.ranking.position_3;
@@ -68,6 +70,7 @@ async function start() {
 	document.getElementById('total_unique_beers_position_16_name').innerHTML = leaderboard.number_unique_beers.ranking.position_16;
     
 	document.getElementById('total_unique_beers_position_1_points').innerHTML = leaderboard.number_unique_beers.points.points_1;
+	document.getElementById('total_unique_beers_position_1_points').innerHTML += leaderboard.number_unique_beers.weekly.weekly_1;
 	document.getElementById('total_unique_beers_position_2_points').innerHTML = leaderboard.number_unique_beers.points.points_2;
 	document.getElementById('total_unique_beers_position_3_points').innerHTML = leaderboard.number_unique_beers.points.points_3;
 	document.getElementById('total_unique_beers_position_4_points').innerHTML = leaderboard.number_unique_beers.points.points_4;
