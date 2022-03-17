@@ -70,9 +70,9 @@ async function start() {
 	document.getElementById('total_unique_beers_position_16_name').innerHTML = leaderboard.number_unique_beers.ranking.position_16;
     
 	document.getElementById('total_unique_beers_position_1_points').innerHTML = leaderboard.number_unique_beers.points.points_1;
-	document.getElementById('total_unique_beers_position_1_points').innerHTML += " (+"
+	document.getElementById('total_unique_beers_position_1_points').innerHTML += " (+";
 	document.getElementById('total_unique_beers_position_1_points').innerHTML += leaderboard.number_unique_beers.weekly.weekly_1;
-	document.getElementById('total_unique_beers_position_1_points').innerHTML += ")"
+	document.getElementById('total_unique_beers_position_1_points').innerHTML += ")";
 	document.getElementById('total_unique_beers_position_2_points').innerHTML = leaderboard.number_unique_beers.points.points_2;
 	document.getElementById('total_unique_beers_position_3_points').innerHTML = leaderboard.number_unique_beers.points.points_3;
 	document.getElementById('total_unique_beers_position_4_points').innerHTML = leaderboard.number_unique_beers.points.points_4;
