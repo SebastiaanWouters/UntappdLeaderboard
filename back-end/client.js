@@ -54,7 +54,6 @@ module.exports = class UntappdClient {
             let user = listOfUsers[i];
             let data = await this.get(`/v4/user/info/${listOfUsers[i]}?access_token=${this.accessToken}`);
             
-            //const data = require('./test.json'); 
             
             let realName = data.response.user.first_name.concat(" ", data.response.user.last_name);
             let weeklyjson = data.response.user.checkins.items;

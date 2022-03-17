@@ -14,7 +14,7 @@ function generateJSON(information) {
 	for (let i = 0; i < information.length; i++) {
 		newJSON += `"${information[i][0]}" : {
             "ranking" : {
-                "position_1" : "${information[i][1][1]}"
+                "position_1" : "${information[i][1][1]}",
                 "position_2" : "${information[i][2][1]}",
                 "position_3" : "${information[i][3][1]}",
                 "position_4" : "${information[i][4][1]}",
@@ -32,7 +32,7 @@ function generateJSON(information) {
                 "position_16" : "${information[i][16][1]}"
             },
             "points" : {
-                "points_1" : "${information[i][1][i+2]}"
+                "points_1" : "${information[i][1][i+2]}",
                 "points_2" : "${information[i][2][i+2]}",
                 "points_3" : "${information[i][3][i+2]}",
                 "points_4" : "${information[i][4][i+2]}",
@@ -50,21 +50,21 @@ function generateJSON(information) {
                 "points_16" : "${information[i][16][i+2]}"
             },
             "weekly" : {
-            	"weekly_1" : "${information[i][1][5]}"
-            	"weekly_2" : "${information[i][2][5]}"
-            	"weekly_3" : "${information[i][3][5]}"
-            	"weekly_4" : "${information[i][4][5]}"
-            	"weekly_5" : "${information[i][5][5]}"
-            	"weekly_6" : "${information[i][6][5]}"
-            	"weekly_7" : "${information[i][7][5]}"
-            	"weekly_8" : "${information[i][8][5]}"
-            	"weekly_9" : "${information[i][9][5]}"
-            	"weekly_10" : "${information[i][10][5]}"
-            	"weekly_11" : "${information[i][11][5]}"
-            	"weekly_12" : "${information[i][12][5]}"
-            	"weekly_13" : "${information[i][13][5]}"
-            	"weekly_14" : "${information[i][14][5]}"
-            	"weekly_15" : "${information[i][15][5]}"
+            	"weekly_1" : "${information[i][1][5]}",
+            	"weekly_2" : "${information[i][2][5]}",
+            	"weekly_3" : "${information[i][3][5]}",
+            	"weekly_4" : "${information[i][4][5]}",
+            	"weekly_5" : "${information[i][5][5]}",
+            	"weekly_6" : "${information[i][6][5]}",
+            	"weekly_7" : "${information[i][7][5]}",
+            	"weekly_8" : "${information[i][8][5]}",
+            	"weekly_9" : "${information[i][9][5]}",
+            	"weekly_10" : "${information[i][10][5]}",
+            	"weekly_11" : "${information[i][11][5]}",
+            	"weekly_12" : "${information[i][12][5]}",
+            	"weekly_13" : "${information[i][13][5]}",
+            	"weekly_14" : "${information[i][14][5]}",
+            	"weekly_15" : "${information[i][15][5]}",
             	"weekly_16" : "${information[i][16][5]}"
             	
             }
