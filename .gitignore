@@ -1,21 +1,5 @@
-# API keys
-keys.json
-
-# Node.js files
-node_modules/*
-package-lock.json
-
-# Log files
-*.log
-
-# Visual Studio Code
-.vs
-.vscode/*
-!.vscode/settings.json
-!.vscode/tasks.json
-!.vscode/launch.json
-!.vscode/extensions.json
-*.code-workspace
-
-# Local History for Visual Studio Code
-.history/
+node_modules
+packages/untappd-sveltekit/node_modules/*
+packages/cron-job/node_modules/*
+packages/cron-job/.env
+packages/untappd-sveltekit/users_data.db

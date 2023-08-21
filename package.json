@@ -1,26 +1,20 @@
 {
-  "name": "leaderboard",
-  "description": "A website with a leaderboard between my friends based on Untappd.com data.",
-  "main": "main.js",
-  "private": false,
+  "name": "untappd",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
   "scripts": {
-    "lint": "eslint . --ext .js",
-    "lint-fix": "eslint . --ext .js --fix",
-    "lint-start": "eslint --init"
+    "start:sveltekit": "cd packages/untappd-sveltekit && npm run dev",
+    "start:cron": "cd packages/cron-job && node index.mjs",
+    "start": "npm run start:sveltekit & npm run start:cron"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/eurnie/UntappdLeaderboard"
-  },
-  "keywords": [
-    "Untappd",
-    "leaderboard",
-    "beer"
-  ],
-  "author": "Arne Vermeulen",
-  "license": "MIT",
-  "homepage": "http://arne.ulyssis.be/Untappd/",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
   "devDependencies": {
-    "eslint": "^7.32.0"
+    "svelte-headless-table": "^0.17.5"
+  },
+  "dependencies": {
+    "iconify-icon": "^1.0.8"
   }
 }
